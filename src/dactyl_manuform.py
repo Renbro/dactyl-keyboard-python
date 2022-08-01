@@ -4025,6 +4025,8 @@ def wire_posts():
 
 def model_side(side="right"):
     print('model_right()')
+    if debug_exports:
+        export_file(shape=single_plate(), fname=path.join(r"..", "things", r"debug_single_plate"))
     #shape = add([key_holes(side=side)])
     shape = union([key_holes(side=side)])
     if debug_exports:
