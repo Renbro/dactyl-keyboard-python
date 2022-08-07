@@ -76,7 +76,7 @@ else:
 ####################################################
 
 
-debug_exports = False 
+debug_exports = True 
 debug_trace = False
 
 def debugprint(info):
@@ -1538,7 +1538,7 @@ def carbonfet_thumb_tl_place(shape):
 def carbonfet_thumb_tr_place(shape):
     shape = rotate(shape, [6, -25, 10])
     shape = translate(shape, thumborigin())
-    shape = translate(shape, [-7.5, -29.5, 0])
+    shape = translate(shape, [-6.5, -28.5, -2])
     return shape
 
 def carbonfet_thumb_ml_place(shape):
@@ -1550,7 +1550,7 @@ def carbonfet_thumb_ml_place(shape):
 def carbonfet_thumb_mr_place(shape):
     shape = rotate(shape, [4, -31, 14])
     shape = translate(shape, thumborigin())
-    shape = translate(shape, [-22.2, -41, -10.3])
+    shape = translate(shape, [-21.7, -40.5, -11.3])
     return shape
 
 def carbonfet_thumb_br_place(shape):
@@ -1562,7 +1562,7 @@ def carbonfet_thumb_br_place(shape):
 def carbonfet_thumb_bl_place(shape):
     shape = rotate(shape, [6, -37, 18])
     shape = translate(shape, thumborigin())
-    shape = translate(shape, [-47, -23, -19])
+    shape = translate(shape, [-47, -23, -18])
     return shape
 
 
